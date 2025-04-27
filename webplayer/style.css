@@ -1,0 +1,66 @@
+/* Hide fullscreen button */
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+/* Style the control panel background */
+/* video::-webkit-media-controls-panel {
+  background-color: #1e1e2f;
+  border-top: 2px solid #4caf50;
+  padding: 5px;
+  border-radius: 0 0 12px 12px;
+}
+ */
+/* Style play button */
+video::-webkit-media-controls-play-button {
+  background-color: #4caf50;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+video::-webkit-media-controls-play-button:hover {
+  background-color: #66bb6a;
+}
+
+/* Style mute button */
+video::-webkit-media-controls-mute-button {
+  /* background-color: #f44336; */
+  border-radius: 50%;
+  transition: color 0.3s;
+  
+}
+video::-webkit-media-controls-mute-button:hover {
+  color: #e57373;
+}
+
+/* Style volume slider */
+/* video::-webkit-media-controls-volume-slider {
+  background-color: #2196f3;
+  border-radius: 8px;
+} */
+
+/* Style timeline bar */
+video::-webkit-media-controls-timeline {
+   /*background-color: #888; */
+   color: red;
+  border-radius: 5px;
+  height: 6px;
+}
+
+/* Style current time text */
+video::-webkit-media-controls-current-time-display {
+  color: #25db5d;
+  font-weight: bold;
+}
+
+/* Style remaining time */
+video::-webkit-media-controls-time-remaining-display {
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the enclosure */
+ video::-webkit-media-controls-enclosure {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+} 
