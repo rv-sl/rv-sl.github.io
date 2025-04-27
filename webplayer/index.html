@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RvX Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body onload="runn()">
+    <!--<div class="Fulls-banners">
+        <div class="new-up">
+            
+        </div>
+        <div class="tutorial">
+            
+        </div>
+    </div>-->
+    <div  class="overlay-nos z6">
+        <h1>Sorry No Source!</h1>
+        <h5>If you had any source link you can give bellow and play it...</h5>
+        <input type="text" placeholder="Enter Url or video id Here...."  id="inU">   
+        <input type="file" accept="video/*" style="display:none;"  id="localF"  >
+        <!--<h5>or</h5> -->
+        <label for="localF" class="lable-lf hide">Local File</label>
+        <button class="Btn" onclick="checkFOUOId()"  >Play</button>    
+    </div> 
+    <header>
+        <h1>RvX Player</h1>
+    </header>
+    <div class="middleC w100 z5">
+    
+    <div class="info">
+        <h2>Big Buck Bunny.</h2>
+    </div>
+    <div class="v-h relative-normal">
+         <video controls controlsList="nodownload" width="100%" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+         <div class="sub-h">
+             <span class="subT text-shadow-border"></span>
+         </div>
+                 <button id="fullscreenBtn" onclick="fulls()" class="material-icons fullscreen-btn">fullscreen</button>
+
+    </div>
+    <div class="info">
+        <h4>Example video bigbuck bunny..</h4>
+    </div>
+    
+    </div>
+    <footer>
+        <h5>All rights reserved @RvX Bots</h5>
+    </footer>
+    <script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="el.js"></script>
+</body>
+      </html>
